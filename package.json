@@ -23,7 +23,8 @@
   "scripts": {
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=0a00d9a0e05a"
   },
   "eslintConfig": {
     "extends": [
@@ -91,5 +92,7 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "readme": "ERROR: No README data found!",
+  "_id": "@software-maestro/react@0.0.1"
 }

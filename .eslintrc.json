@@ -15,5 +15,6 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", "tsx"] }]
-  }
+  },
+  "ignorePatterns": ["src/stories"]
 }
