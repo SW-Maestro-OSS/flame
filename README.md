@@ -6,3 +6,8 @@
 ```bash
 npm i @software-maestro/react
 ```
+
+
+## Contributing
+
+[Discord](https://discord.gg/pdpHDMQC)에 참여해주세요.
