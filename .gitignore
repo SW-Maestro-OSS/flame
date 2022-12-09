@@ -134,3 +134,6 @@ yarn-error.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# storybook static
+storybook-static
