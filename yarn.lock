@@ -4950,7 +4950,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@typescript-eslint/utils@npm:5.46.0, @typescript-eslint/utils@npm:^5.10.0, @typescript-eslint/utils@npm:^5.13.0, @typescript-eslint/utils@npm:^5.45.0":
+=======
+"@typescript-eslint/utils@npm:5.46.0, @typescript-eslint/utils@npm:^5.13.0":
+>>>>>>> main
   version: 5.46.0
   resolution: "@typescript-eslint/utils@npm:5.46.0"
   dependencies:

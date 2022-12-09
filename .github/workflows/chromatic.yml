@@ -15,5 +15,8 @@ jobs:
       - run: yarn
       - uses: chromaui/action@v1
         with:
+<<<<<<< HEAD
           workingDir: packages/react
+=======
+>>>>>>> main
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
