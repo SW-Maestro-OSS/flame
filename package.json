@@ -1,21 +1,14 @@
 {
   "name": "soma-design-system",
-  "version": "1.0.0",
   "description": "소프트웨어 마에스트로 디자인 시스템",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SW-Maestro-OSS/soma-design-system.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SW-Maestro-OSS/soma-design-system/issues"
-  },
-  "homepage": "https://github.com/SW-Maestro-OSS/soma-design-system#readme"
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.3.0",
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  }
 }
