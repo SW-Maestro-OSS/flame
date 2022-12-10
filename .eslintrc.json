@@ -13,7 +13,9 @@
         "tsx": "never"
       }
     ],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx", ".jsx", "spec.js"] }]
   },
   "settings": {
     "import/resolver": {

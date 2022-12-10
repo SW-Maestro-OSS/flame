@@ -4,7 +4,6 @@
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.ts",
-  "private": true,
   "license": "MIT",
   "engines": {
     "node": ">=16.0.0"
@@ -18,7 +17,7 @@
     "build": "yarn build:es && yarn build:cjs",
     "build:es": "tsc --project tsconfig.es.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
-    "prepare": "husky install",
+    "prepare": "cd ../../ && husky install ",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=0a00d9a0e05a"
