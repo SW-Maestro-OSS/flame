@@ -12,7 +12,9 @@
   },
   "scripts": {
     "start": "yarn storybook",
-    "build": "tsc",
+    "build": "yarn build:es && yarn build:cjs",
+    "build:es": "tsc --project tsconfig.es.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
@@ -27,7 +29,6 @@
     "@storybook/builder-webpack5": "^6.5.14",
     "@storybook/manager-webpack5": "^6.5.14",
     "@storybook/node-logger": "^6.5.14",
-    "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.14",
     "@storybook/testing-library": "^0.0.13",
     "@types/jest": "^29.2.4",

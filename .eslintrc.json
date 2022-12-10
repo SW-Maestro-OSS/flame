@@ -1,4 +1,4 @@
 {
-  "extends": ["airbnb", "prettier", "plugin:storybook/recommend"],
+  "extends": ["airbnb", "prettier", "plugin:storybook/recommended"],
   "plugins": ["prettier", "react-hooks", "@emotion", "jest", "jest-dom"]
 }
