@@ -1,6 +1,9 @@
 {
   "name": "@software-maestro/react",
   "version": "0.0.1",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.ts",
   "private": true,
   "license": "MIT",
   "engines": {
@@ -63,7 +66,6 @@
     ]
   },
   "packageManager": "yarn@3.3.0",
-  "main": "index.js",
   "keywords": [],
   "author": "",
   "description": "",

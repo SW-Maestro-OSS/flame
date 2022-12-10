@@ -1,4 +1,28 @@
 {
   "extends": ["airbnb", "prettier", "plugin:storybook/recommended"],
-  "plugins": ["prettier", "react-hooks", "@emotion", "jest", "jest-dom"]
+  "plugins": ["prettier", "react-hooks", "@emotion", "jest", "jest-dom"],
+  "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "mjs": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/prefer-default-export": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  }
 }
