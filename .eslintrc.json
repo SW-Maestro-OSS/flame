@@ -17,6 +17,19 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx", ".jsx", "spec.js"] }]
   },
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)"],
+      "parser": "@typescript-eslint/parser",
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "parserOptions": {
+        "project": ["./tsconfig.json", "./packages/**/tsconfig.json"]
+      }
+    }
+  ],
   "settings": {
     "import/resolver": {
       "node": {
