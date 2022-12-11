@@ -137,3 +137,6 @@ yarn-error.log*
 
 # storybook static
 storybook-static
+
+# react build files
+build
