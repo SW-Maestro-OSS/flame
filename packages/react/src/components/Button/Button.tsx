@@ -2,6 +2,8 @@ import { AnchorHTMLAttributes, ButtonHTMLAttributes, ForwardedRef, forwardRef, R
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
+import { ClickEvent } from '~/types/events';
+
 type ButtonSize = 'small' | 'medium' | 'large';
 
 export interface BaseProps {
@@ -11,6 +13,8 @@ export interface BaseProps {
    * @type 'small' | 'medium' | 'large' | undefined
    */
   size?: ButtonSize;
+
+  onClick: (event: ClickEvent) => void;
 
   /**
    * Button의 비활성화 여부를 정합니다.
@@ -22,7 +26,6 @@ export interface BaseProps {
    */
   htmlType?: 'button' | 'reset' | 'submit';
 }
-
 type LinkElProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'onClick'>;
 type ButtonElProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onClick'>;
 
@@ -40,6 +43,8 @@ const baseStyles = () => css`
   text-decoration: none;
   border-style: solid;
 `;
+
+const loadingStyles = () => css``;
 
 const StyledButton = styled('button')<StyledButtonProps>(baseStyles);
 
