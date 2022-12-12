@@ -55,3 +55,5 @@ export const Button = forwardRef(
     </StyledButton>
   ),
 );
+
+Button.displayName = 'Button';
