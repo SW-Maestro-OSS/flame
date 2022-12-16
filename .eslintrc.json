@@ -39,6 +39,16 @@
       "parserOptions": {
         "project": ["./tsconfig.json", "./packages/**/tsconfig.json"]
       }
+    },
+    {
+      "files": ["packages/react/**/*.ts?(x)", "packages/react/**/*.js?(x)"],
+      "settings": {
+        "import/resolver": {
+          "typescript": {
+            "project": "./packages/react/tsconfig.json"
+          }
+        }
+      }
     }
   ],
   "settings": {

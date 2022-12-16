@@ -1,6 +1,6 @@
 {
   "name": "@software-maestro/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.ts",
