@@ -48,12 +48,10 @@ const loadingStyles = () => css``;
 
 const StyledButton = styled('button')<StyledButtonProps>(baseStyles);
 
-export const Button = forwardRef(
-  ({ children, size = 'medium', ...props }: ButtonProps, ref: ForwardedRef<HTMLButtonElement>) => (
-    <StyledButton {...props} size={size} ref={ref}>
-      {children}
-    </StyledButton>
-  ),
-);
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ children, size = 'medium', ...props }, ref) => (
+  <StyledButton {...props} size={size} ref={ref}>
+    {children}
+  </StyledButton>
+));
 
 Button.displayName = 'Button';
