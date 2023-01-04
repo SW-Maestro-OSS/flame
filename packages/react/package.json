@@ -1,6 +1,6 @@
 {
   "name": "@software-maestro/react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.ts",
@@ -8,7 +8,13 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -24,6 +30,7 @@
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.10.5",
+    "@emotion/is-prop-valid": "^1.2.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@storybook/addon-actions": "^6.5.14",
@@ -71,6 +78,7 @@
   "author": "",
   "description": "",
   "peerDependencies": {
+    "@emotion/is-prop-valid": "1.x",
     "@emotion/react": "11.x",
     "@emotion/styled": "11.x",
     "react": ">=16.8.0 <19.0.0",
